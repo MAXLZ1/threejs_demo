@@ -85,8 +85,7 @@ function init() {
     camera.position.z = 30;
     camera.lookAt(scence.position);
     document.getElementById('WebGL-output').appendChild(renderer.domElement);
-    renderer.render(scence, camera);
-    // renderScence();
+    renderScence();
     var step = 0;
     function renderScence() {
         stats.update();
@@ -103,7 +102,7 @@ function init() {
     }
 
 }
-//window.addEventListener('resize', onResize, false);
+window.addEventListener('resize', onResize, false);
 function initStats(){
     var stats = new Stats();
     stats.showPanel(0);

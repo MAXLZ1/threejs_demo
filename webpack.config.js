@@ -150,8 +150,9 @@ module.exports = {
         compress: true,
         historyApiFallback:{
             rewrites:[
-                {from: /./, to: '/pages/three_demo_01/index.html'},
-                {from: /^\/demo1/, to: '/pages/three_demo_01/index.html'}
+                {from: /./, to: '/pages/three_demo_02/index.html'},
+                {from: /^\/demo1/, to: '/pages/three_demo_01/index.html'},
+                {from: /^\/demo2/, to: '/pages/three_demo_02/index.html'}
             ]
         }
     }
