@@ -9,6 +9,7 @@ function initStats () {
     document.body.appendChild(stats.domElement);
     return stats;
 }
+// 添加缩放等手势动作
 function initTrackballControls(camera, renderer){
     let trackballControls = new TrackballControls(camera,renderer.domElement);
     // 旋转速度
@@ -29,7 +30,16 @@ function initTrackballControls(camera, renderer){
     trackballControls.keys = [65, 83, 68];
     return trackballControls;
 }
+
+function createMultiMaterialObject (geometry, materials) {
+    let group = new THREE.Group();
+    materials.forEach(material => {
+        group.add(new THREE.Mesh(geometry, material));
+    });
+    return group;
+}
 export {
     initStats,
-    initTrackballControls
+    initTrackballControls,
+    createMultiMaterialObject
 }
