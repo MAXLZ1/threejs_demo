@@ -166,7 +166,8 @@ module.exports = {
                 {from: /^\/demo2/, to: '/pages/three_demo_02/index.html'},
                 {from: /^\/demo3/, to: '/pages/three_demo_03/index.html'},
                 {from: /^\/demo4/, to: '/pages/three_demo_04/index.html'},
-                {from: /./, to: '/pages/three_demo_04/index.html'}
+                {from: /^\/demo5/, to: '/pages/three_demo_05/index.html'},
+                {from: /./, to: '/pages/three_demo_05/index.html'}
             ]
         }
     }
