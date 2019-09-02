@@ -13,11 +13,11 @@ function initStats () {
 function initTrackballControls(camera, renderer){
     let trackballControls = new TrackballControls(camera,renderer.domElement);
     // 旋转速度
-    trackballControls.rotateSpeed = 1.0;
+    trackballControls.rotateSpeed = 2.0;
     // 变焦速度
-    trackballControls.zoomSpeed = 1.2;
+    trackballControls.zoomSpeed = 2.2;
     // 平移速度
-    trackballControls.panSpeed = 0.8;
+    trackballControls.panSpeed = 1.8;
     // 是否不变焦
     trackballControls.noZoom = false;
     // 是否不平移
