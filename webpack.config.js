@@ -169,7 +169,8 @@ module.exports = {
                 {from: /^\/demo5/, to: '/pages/three_demo_05/index.html'},
                 {from: /^\/demo6/, to: '/pages/three_demo_06/index.html'},
                 {from: /^\/demo7/, to: '/pages/three_demo_07/index.html'},
-                {from: /./, to: '/pages/three_demo_07/index.html'}
+                {from: /^\/demo8/, to: '/pages/three_DirectionalLight_demo/index.html'},
+                {from: /./, to: '/pages/three_DirectionalLight_demo/index.html'}
             ]
         }
     }
