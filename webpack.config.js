@@ -171,7 +171,8 @@ module.exports = {
                 {from: /^\/demo7/, to: '/pages/three_demo_07/index.html'},
                 {from: /^\/demo8/, to: '/pages/three_DirectionalLight_demo/index.html'},
                 {from: /^\/demo9/, to: '/pages/three_HemisphereLight_demo/index.html'},
-                {from: /./, to: '/pages/three_HemisphereLight_demo/index.html'}
+                {from: /^\/demo10/, to: '/pages/three_RectAreaLight_demo/index.html'},
+                {from: /./, to: '/pages/three_RectAreaLight_demo/index.html'}
             ]
         }
     }
