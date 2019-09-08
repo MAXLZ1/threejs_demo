@@ -173,7 +173,8 @@ module.exports = {
                 {from: /^\/demo9/, to: '/pages/three_HemisphereLight_demo/index.html'},
                 {from: /^\/demo10/, to: '/pages/three_RectAreaLight_demo/index.html'},
                 {from: /^\/demo11/, to: '/pages/three_LensFlare_demo/index.html'},
-                {from: /./, to: '/pages/three_LensFlare_demo/index.html'}
+                {from: /^\/demo12/, to: '/pages/three_LineBasicMaterial_demo/index.html'},
+                {from: /./, to: '/pages/three_LineBasicMaterial_demo/index.html'}
             ]
         }
     }
