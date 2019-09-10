@@ -31,6 +31,24 @@ function initTrackballControls(camera, renderer){
     return trackballControls;
 }
 
+function initThree (option){
+    let {sceneOption,cameraOption, rendererOption} = option;
+    let scene = new THREE.Scene();
+    scene.background = new THREE.Color(sceneOption.color);
+    let camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 0.1, 1000);
+    camera.position.set(-30, 30,40);
+    let renderer = new THREE.WebGLRenderer();
+    renderer.shadowMap.enabled = true;
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    scene.add(camera);
+    document.body.appendChild(renderer.domElement);
+    return {
+        scene,
+        camera,
+        renderer
+    };
+}
+
 function createMultiMaterialObject (geometry, materials) {
     let group = new THREE.Group();
     materials.forEach(material => {
@@ -41,5 +59,6 @@ function createMultiMaterialObject (geometry, materials) {
 export {
     initStats,
     initTrackballControls,
+    initThree,
     createMultiMaterialObject
 }

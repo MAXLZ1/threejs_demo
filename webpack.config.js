@@ -175,7 +175,8 @@ module.exports = {
                 {from: /^\/demo11$/, to: '/pages/three_LensFlare_demo/index.html'},
                 {from: /^\/demo12$/, to: '/pages/three_LineBasicMaterial_demo/index.html'},
                 {from: /^\/demo13$/, to: '/pages/three_LineDashedMaterial_demo/index.html'},
-                {from: /./, to: '/pages/three_LineDashedMaterial_demo/index.html'}
+                {from: /^\/demo14$/, to: '/pages/three_MeshBasicMaterial_demo/index.html'},
+                {from: /./, to: '/pages/three_MeshBasicMaterial_demo/index.html'}
             ]
         }
     }
