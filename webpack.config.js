@@ -162,19 +162,20 @@ module.exports = {
         compress: true,
         historyApiFallback:{
             rewrites:[
-                {from: /^\/demo1/, to: '/pages/three_demo_01/index.html'},
-                {from: /^\/demo2/, to: '/pages/three_demo_02/index.html'},
-                {from: /^\/demo3/, to: '/pages/three_demo_03/index.html'},
-                {from: /^\/demo4/, to: '/pages/three_demo_04/index.html'},
-                {from: /^\/demo5/, to: '/pages/three_demo_05/index.html'},
-                {from: /^\/demo6/, to: '/pages/three_demo_06/index.html'},
-                {from: /^\/demo7/, to: '/pages/three_demo_07/index.html'},
-                {from: /^\/demo8/, to: '/pages/three_DirectionalLight_demo/index.html'},
-                {from: /^\/demo9/, to: '/pages/three_HemisphereLight_demo/index.html'},
-                {from: /^\/demo10/, to: '/pages/three_RectAreaLight_demo/index.html'},
-                {from: /^\/demo11/, to: '/pages/three_LensFlare_demo/index.html'},
-                {from: /^\/demo12/, to: '/pages/three_LineBasicMaterial_demo/index.html'},
-                {from: /./, to: '/pages/three_LineBasicMaterial_demo/index.html'}
+                {from: /^\/demo1$/, to: '/pages/three_demo_01/index.html'},
+                {from: /^\/demo2$/, to: '/pages/three_demo_02/index.html'},
+                {from: /^\/demo3$/, to: '/pages/three_demo_03/index.html'},
+                {from: /^\/demo4$/, to: '/pages/three_demo_04/index.html'},
+                {from: /^\/demo5$/, to: '/pages/three_demo_05/index.html'},
+                {from: /^\/demo6$/, to: '/pages/three_demo_06/index.html'},
+                {from: /^\/demo7$/, to: '/pages/three_demo_07/index.html'},
+                {from: /^\/demo8$/, to: '/pages/three_DirectionalLight_demo/index.html'},
+                {from: /^\/demo9$/, to: '/pages/three_HemisphereLight_demo/index.html'},
+                {from: /^\/demo10$/, to: '/pages/three_RectAreaLight_demo/index.html'},
+                {from: /^\/demo11$/, to: '/pages/three_LensFlare_demo/index.html'},
+                {from: /^\/demo12$/, to: '/pages/three_LineBasicMaterial_demo/index.html'},
+                {from: /^\/demo13$/, to: '/pages/three_LineDashedMaterial_demo/index.html'},
+                {from: /./, to: '/pages/three_LineDashedMaterial_demo/index.html'}
             ]
         }
     }
