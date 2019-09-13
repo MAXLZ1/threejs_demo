@@ -31,8 +31,7 @@ function initTrackballControls(camera, renderer){
     return trackballControls;
 }
 
-function initThree (option){
-    let {sceneOption,cameraOption, rendererOption} = option;
+function initThree ({sceneOption={},cameraOption={}, rendererOption={}}){
     let scene = new THREE.Scene();
     scene.background = new THREE.Color(sceneOption.color);
     let camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 0.1, 1000);
