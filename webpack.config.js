@@ -6,6 +6,7 @@ const HtmlWebpackPlugin =  require('html-webpack-plugin'); // 将打包后js自�
 const {CleanWebpackPlugin} = require('clean-webpack-plugin'); // 清除打包文件工具
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // 分离css
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'); // css压缩去重
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const cleanPath = [path.join(__dirname, './dist')];
 // 多页面配置函数
 const pagesSetting = () => {
@@ -153,7 +154,13 @@ module.exports = {
                     ],
             },
             canPrint: true
-        })
+        }),
+        new CopyWebpackPlugin([
+            {
+                from: 'src/assets/fonts',
+                to: 'assets/fonts'
+            }
+        ])
     ],
     devServer: {
         host: "localhost",
@@ -179,7 +186,8 @@ module.exports = {
                 {from: /^\/demo15$/, to: '/pages/three_MeshDepthMaterial_demo/index.html'},
                 {from: /^\/demo16$/, to: '/pages/three_MeshLambertMaterial_demo/index.html'},
                 {from: /^\/demo17$/, to: '/pages/three_geometry_demo1/index.html'},
-                {from: /./, to: '/pages/three_geometry_demo1/index.html'}
+                {from: /^\/demo18$/, to: '/pages/three_geometry_demo2/index.html'},
+                {from: /./, to: '/pages/three_geometry_demo2/index.html'}
             ]
         }
     }

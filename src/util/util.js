@@ -36,7 +36,9 @@ function initThree ({sceneOption={},cameraOption={}, rendererOption={}}){
     scene.background = new THREE.Color(sceneOption.color);
     let camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 0.1, 1000);
     camera.position.set(-30, 30,40);
-    let renderer = new THREE.WebGLRenderer();
+    let renderer = new THREE.WebGLRenderer({
+        antialias:true // 抗锯齿
+    });
     renderer.shadowMap.enabled = true;
     renderer.setSize(window.innerWidth, window.innerHeight);
     scene.add(camera);
