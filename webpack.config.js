@@ -187,7 +187,8 @@ module.exports = {
                 {from: /^\/demo16$/, to: '/pages/three_MeshLambertMaterial_demo/index.html'},
                 {from: /^\/demo17$/, to: '/pages/three_geometry_demo1/index.html'},
                 {from: /^\/demo18$/, to: '/pages/three_geometry_demo2/index.html'},
-                {from: /./, to: '/pages/three_geometry_demo2/index.html'}
+                {from: /^\/demo19$/, to: '/pages/three_sprite_demo1/index.html'},
+                {from: /./, to: '/pages/three_sprite_demo1/index.html'}
             ]
         }
     }
