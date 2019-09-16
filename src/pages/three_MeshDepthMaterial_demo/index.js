@@ -6,9 +6,7 @@ import * as dat from 'dat.gui'
 
 function init(){
     let {camera, scene, renderer} = initThree({
-        sceneOption:{
-            color: 0x444444
-        }
+        color: 0x444444
     });
     camera.near = 15;
     camera.updateProjectionMatrix();

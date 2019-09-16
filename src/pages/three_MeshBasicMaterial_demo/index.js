@@ -21,9 +21,7 @@ import {
 function init(){
     let stats = initStats();
     let {camera, scene, renderer} = initThree({
-        sceneOption:{
-            color: 0x444444
-        }
+        color: 0x444444
     });
 
     let ambientLight = new THREE.AmbientLight(0xffffff);

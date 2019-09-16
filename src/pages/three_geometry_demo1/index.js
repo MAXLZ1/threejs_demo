@@ -8,9 +8,7 @@ import {LineBasicMaterial, RingGeometry, WireframeGeometry} from "../../libs/thr
 function init() {
     let stats = initStats();
     let {camera, scene, renderer} = initThree({
-        sceneOption: {
-            color: 0x444444
-        }
+        color: 0x444444
     });
     camera.position.set(-50, 60, 70);
 

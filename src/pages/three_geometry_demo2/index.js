@@ -8,9 +8,7 @@ function init() {
     let stats = initStats();
     let gui = new dat.GUI();
     let {camera, scene, renderer} = initThree({
-        sceneOption: {
-            color: 0x444444
-        }
+        color: 0x444444
     });
     camera.position.set(-50, 60, 80);
 
