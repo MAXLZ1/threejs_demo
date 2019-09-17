@@ -190,7 +190,8 @@ module.exports = {
                 {from: /^\/demo19$/, to: '/pages/three_sprite_demo1/index.html'},
                 {from: /^\/demo20$/, to: '/pages/three_sprite_demo2/index.html'},
                 {from: /^\/demo21$/, to: '/pages/three_group_demo/index.html'},
-                {from: /./, to: '/pages/three_group_demo/index.html'}
+                {from: /^\/demo22$/, to: '/pages/three_group_demo/index.html'},
+                {from: /./, to: '/pages/three_geometry_merge_demo/index.html'}
             ]
         }
     }
