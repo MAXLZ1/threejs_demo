@@ -188,8 +188,9 @@ module.exports = {
                 {from: /^\/demo17$/, to: '/pages/three_geometry_demo1/index.html'},
                 {from: /^\/demo18$/, to: '/pages/three_geometry_demo2/index.html'},
                 {from: /^\/demo19$/, to: '/pages/three_sprite_demo1/index.html'},
-                {from: /^\/demo19$/, to: '/pages/three_sprite_demo2/index.html'},
-                {from: /./, to: '/pages/three_sprite_demo2/index.html'}
+                {from: /^\/demo20$/, to: '/pages/three_sprite_demo2/index.html'},
+                {from: /^\/demo21$/, to: '/pages/three_group_demo/index.html'},
+                {from: /./, to: '/pages/three_group_demo/index.html'}
             ]
         }
     }
