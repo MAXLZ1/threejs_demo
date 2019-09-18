@@ -51,16 +51,16 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.js$/,
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
-                }
-            },
+            // {
+            //     test: /\.js$/,
+            //     exclude: /(node_modules|bower_components)/,
+            //     use: {
+            //         loader: 'babel-loader',
+            //         options: {
+            //             presets: ['@babel/preset-env']
+            //         }
+            //     }
+            // },
             {
                 test: /\.css$/,
                 use:[
@@ -159,6 +159,10 @@ module.exports = {
             {
                 from: 'src/assets/fonts',
                 to: 'assets/fonts'
+            },
+            {
+                from: 'src/static',
+                to: 'static'
             }
         ])
     ],
@@ -190,8 +194,9 @@ module.exports = {
                 {from: /^\/demo19$/, to: '/pages/three_sprite_demo1/index.html'},
                 {from: /^\/demo20$/, to: '/pages/three_sprite_demo2/index.html'},
                 {from: /^\/demo21$/, to: '/pages/three_group_demo/index.html'},
-                {from: /^\/demo22$/, to: '/pages/three_group_demo/index.html'},
-                {from: /./, to: '/pages/three_geometry_merge_demo/index.html'}
+                {from: /^\/demo22$/, to: '/pages/three_geometry_merge_demo/index.html'},
+                {from: /^\/demo23$/, to: '/pages/three_loader_demo/index.html'},
+                {from: /./, to: '/pages/three_loader_demo/index.html'}
             ]
         }
     }
