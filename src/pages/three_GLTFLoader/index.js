@@ -8,7 +8,6 @@ async function init () {
     let stats = initStats();
     let {camera, renderer, scene} = initThree();
     let trackballControls = initTrackballControls(camera, renderer);
-    renderer.setClearColor(0xff0000, 0.2)
     let ambientLight = new THREE.AmbientLight(0xcccccc);
     scene.add(ambientLight);
     let directionLight = new THREE.DirectionalLight(0xffffff);
@@ -30,7 +29,7 @@ async function init () {
     function render(){
         stats.update();
         trackballControls.update();
-        obj.rotation.z += 0.005;
+        obj.rotation.y += 0.005;
         requestAnimationFrame(render);
         renderer.render(scene, camera);
     }

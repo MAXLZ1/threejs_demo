@@ -33,7 +33,7 @@ function initTrackballControls(camera, renderer){
 
 function initThree (sceneOption){
     let scene = new THREE.Scene();
-    sceneOption && (scene.background = new THREE.Color(sceneOption.color));
+    scene.background = new THREE.Color(sceneOption ? sceneOption.color : 0x000000);
     let camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 0.1, 1000);
     camera.position.set(-30, 30,40);
     let renderer = new THREE.WebGLRenderer({
