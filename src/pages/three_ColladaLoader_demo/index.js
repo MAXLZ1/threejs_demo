@@ -1,7 +1,6 @@
 import '../../stylus/index.styl'
 
 import * as THREE from 'three'
-import * as dat from 'dat.gui'
 import {initThree, initStats} from "../../util/util";
 import {ColladaLoader} from "../../libs/loaders/ColladaLoader";
 import {Vector3} from "../../libs/three.module";
