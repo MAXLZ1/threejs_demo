@@ -200,7 +200,8 @@ module.exports = {
                 {from: /^\/demo25$/, to: '/pages/three_ObjLoader_demo/index.html'},
                 {from: /^\/demo26$/, to: '/pages/three_ColladaLoader_demo/index.html'},
                 {from: /^\/demo27$/, to: '/pages/three_BabylonLoader_demo/index.html'},
-                {from: /./, to: '/pages/three_BabylonLoader_demo/index.html'}
+                {from: /^\/demo28$/, to: '/pages/three_GLTFLoader/index.html'},
+                {from: /./, to: '/pages/three_GLTFLoader/index.html'}
             ]
         }
     }
