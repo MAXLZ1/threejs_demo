@@ -13,7 +13,7 @@ async function init() {
 
     function load() {
         return new Promise((resolve, reject) => {
-            objLoader.load('../../static/json/trousKnot.json', (obj) => {
+            objLoader.load('../../static/modules/trousKnot/trousKnot.json', (obj) => {
                 obj.position.set(20, 0, 0);
                 scene.add(obj);
                 resolve(obj);

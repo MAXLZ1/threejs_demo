@@ -43,6 +43,7 @@ function initThree (sceneOption){
     renderer.shadowMap.enabled = true;
     renderer.setClearColor(0xff0000, 0.3);
     renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
     scene.add(camera);
     document.body.appendChild(renderer.domElement);
     return {
