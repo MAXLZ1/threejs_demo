@@ -1,8 +1,9 @@
 import '../../stylus/index.styl'
 import * as THREE from 'three'
 import {initTrackballControls, initThree, initStats} from "../../util/util";
-import {OBJLoader} from "../../libs/loaders/OBJLoader";
-import {MTLLoader} from "../../libs/loaders/MTLLoader";
+import OBJLoader from 'three-obj-loader'
+import MTLLoader from 'three-mtl-loader'
+OBJLoader(THREE);
 
 async function init () {
     let stats = initStats();
@@ -28,7 +29,7 @@ async function init () {
     plane.receiveShadow = true;
     scene.add(plane);
 
-    let objLoader = new OBJLoader();
+    let objLoader = new THREE.OBJLoader();
     let mtlLoader = new MTLLoader();
     objLoader.setPath('../../static/modules/store/');
     mtlLoader.setPath('../../static/modules/store/');
