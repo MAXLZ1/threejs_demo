@@ -199,7 +199,8 @@ module.exports = {
                 {from: /^\/demo24$/, to: '/pages/three_LegacyJSON_demo/index.html'},
                 {from: /^\/demo25$/, to: '/pages/three_ObjLoader_demo/index.html'},
                 {from: /^\/demo26$/, to: '/pages/three_ColladaLoader_demo/index.html'},
-                {from: /./, to: '/pages/three_ColladaLoader_demo/index.html'}
+                {from: /^\/demo27$/, to: '/pages/three_BabylonLoader_demo/index.html'},
+                {from: /./, to: '/pages/three_BabylonLoader_demo/index.html'}
             ]
         }
     }
