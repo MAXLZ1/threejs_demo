@@ -197,7 +197,8 @@ module.exports = {
                 {from: /^\/demo22$/, to: '/pages/three_geometry_merge_demo/index.html'},
                 {from: /^\/demo23$/, to: '/pages/three_ObjectLoader_demo/index.html'},
                 {from: /^\/demo24$/, to: '/pages/three_LegacyJSON_demo/index.html'},
-                {from: /./, to: '/pages/three_LegacyJSON_demo/index.html'}
+                {from: /^\/demo25$/, to: '/pages/three_ObjLoader_demo/index.html'},
+                {from: /./, to: '/pages/three_ObjLoader_demo/index.html'}
             ]
         }
     }
