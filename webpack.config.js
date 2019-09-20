@@ -8,6 +8,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // 分离css
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'); // css压缩去重
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const cleanPath = [path.join(__dirname, './dist')];
+const pagePath = require('./pagePath');
 // 多页面配置函数
 const pagesSetting = () => {
     const entries = {};
@@ -166,43 +167,16 @@ module.exports = {
             }
         ])
     ],
+    node: {
+        fs: 'empty'
+    },
     devServer: {
         host: "localhost",
         open: true,
         port: 8081,
         compress: true,
         historyApiFallback:{
-            rewrites:[
-                {from: /^\/demo1$/, to: '/pages/three_demo_01/index.html'},
-                {from: /^\/demo2$/, to: '/pages/three_demo_02/index.html'},
-                {from: /^\/demo3$/, to: '/pages/three_demo_03/index.html'},
-                {from: /^\/demo4$/, to: '/pages/three_demo_04/index.html'},
-                {from: /^\/demo5$/, to: '/pages/three_demo_05/index.html'},
-                {from: /^\/demo6$/, to: '/pages/three_demo_06/index.html'},
-                {from: /^\/demo7$/, to: '/pages/three_demo_07/index.html'},
-                {from: /^\/demo8$/, to: '/pages/three_DirectionalLight_demo/index.html'},
-                {from: /^\/demo9$/, to: '/pages/three_HemisphereLight_demo/index.html'},
-                {from: /^\/demo10$/, to: '/pages/three_RectAreaLight_demo/index.html'},
-                {from: /^\/demo11$/, to: '/pages/three_LensFlare_demo/index.html'},
-                {from: /^\/demo12$/, to: '/pages/three_LineBasicMaterial_demo/index.html'},
-                {from: /^\/demo13$/, to: '/pages/three_LineDashedMaterial_demo/index.html'},
-                {from: /^\/demo14$/, to: '/pages/three_MeshBasicMaterial_demo/index.html'},
-                {from: /^\/demo15$/, to: '/pages/three_MeshDepthMaterial_demo/index.html'},
-                {from: /^\/demo16$/, to: '/pages/three_MeshLambertMaterial_demo/index.html'},
-                {from: /^\/demo17$/, to: '/pages/three_geometry_demo1/index.html'},
-                {from: /^\/demo18$/, to: '/pages/three_geometry_demo2/index.html'},
-                {from: /^\/demo19$/, to: '/pages/three_sprite_demo1/index.html'},
-                {from: /^\/demo20$/, to: '/pages/three_sprite_demo2/index.html'},
-                {from: /^\/demo21$/, to: '/pages/three_group_demo/index.html'},
-                {from: /^\/demo22$/, to: '/pages/three_geometry_merge_demo/index.html'},
-                {from: /^\/demo23$/, to: '/pages/three_ObjectLoader_demo/index.html'},
-                {from: /^\/demo24$/, to: '/pages/three_LegacyJSON_demo/index.html'},
-                {from: /^\/demo25$/, to: '/pages/three_ObjLoader_demo/index.html'},
-                {from: /^\/demo26$/, to: '/pages/three_ColladaLoader_demo/index.html'},
-                {from: /^\/demo27$/, to: '/pages/three_BabylonLoader_demo/index.html'},
-                {from: /^\/demo28$/, to: '/pages/three_GLTFLoader/index.html'},
-                {from: /./, to: '/pages/three_GLTFLoader/index.html'}
-            ]
+            rewrites: pagePath
         }
     }
 };
