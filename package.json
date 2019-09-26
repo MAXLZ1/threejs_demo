@@ -41,6 +41,7 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
+    "ammo.js": "^0.0.10",
     "dat.gui": "^0.7.6",
     "stats-js": "^1.0.1",
     "three": "^0.108.0",
