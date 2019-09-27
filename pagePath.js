@@ -31,5 +31,6 @@ module.exports = [
     {from: /^\/three_PCDLoader_demo$/, to: '/pages/three_PCDLoader_demo/index.html'},
     {from: /^\/three_PDBLoader$/, to: '/pages/three_PDBLoader/index.html'},
     {from: /^\/three_SVGLoader_demo$/, to: '/pages/three_SVGLoader_demo/index.html'},
-    {from: /./, to: '/pages/three_SVGLoader_demo/index.html'}
+    {from: /^\/three_TGALoader_demo$/, to: '/pages/three_TGALoader_demo/index.html'},
+    {from: /./, to: '/pages/three_TGALoader_demo/index.html'}
 ];
