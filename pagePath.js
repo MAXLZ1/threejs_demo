@@ -29,5 +29,6 @@ module.exports = [
     {from: /^\/three_GLTFLoader$/, to: '/pages/three_GLTFLoader/index.html'},
     {from: /^\/three_MMDLoader_demo$/, to: '/pages/three_MMDLoader_demo/index.html'},
     {from: /^\/three_PCDLoader_demo$/, to: '/pages/three_PCDLoader_demo/index.html'},
-    {from: /./, to: '/pages/three_PCDLoader_demo/index.html'}
+    {from: /^\/three_PDBLoader$/, to: '/pages/three_PDBLoader/index.html'},
+    {from: /./, to: '/pages/three_PDBLoader/index.html'}
 ];
