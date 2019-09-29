@@ -32,5 +32,6 @@ module.exports = [
     {from: /^\/three_PDBLoader$/, to: '/pages/three_PDBLoader/index.html'},
     {from: /^\/three_SVGLoader_demo$/, to: '/pages/three_SVGLoader_demo/index.html'},
     {from: /^\/three_PRWMLoader_demo$/, to: '/pages/three_PRWMLoader_demo/index.html'},
-    {from: /./, to: '/pages/three_PRWMLoader_demo/index.html'}
+    {from: /^\/three_selectObject_demo$/, to: '/pages/three_selectObject_demo/index.html'},
+    {from: /./, to: '/pages/three_selectObject_demo/index.html'}
 ];
