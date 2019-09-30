@@ -34,5 +34,6 @@ module.exports = [
     {from: /^\/three_PRWMLoader_demo$/, to: '/pages/three_PRWMLoader_demo/index.html'},
     {from: /^\/three_selectObject_demo$/, to: '/pages/three_selectObject_demo/index.html'},
     {from: /^\/three_animation_demo$/, to: '/pages/three_animation_demo/index.html'},
-    {from: /./, to: '/pages/three_animation_demo/index.html'}
+    {from: /^\/three_FirstPersonContorls_demo$/, to: '/pages/three_FirstPersonContorls_demo/index.html'},
+    {from: /./, to: '/pages/three_FirstPersonContorls_demo/index.html'}
 ];
