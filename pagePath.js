@@ -37,5 +37,6 @@ module.exports = [
     {from: /^\/three_FirstPersonContorls_demo$/, to: '/pages/three_FirstPersonContorls_demo/index.html'},
     {from: /^\/three_FlyControls_demo$/, to: '/pages/three_FlyControls_demo/index.html'},
     {from: /^\/three_TrackBallControls_demo$/, to: '/pages/three_TrackBallControls_demo/index.html'},
-    {from: /./, to: '/pages/three_TrackBallControls_demo/index.html'}
+    {from: /^\/three_OrbitControls_demo$/, to: '/pages/three_OrbitControls_demo/index.html'},
+    {from: /./, to: '/pages/three_OrbitControls_demo/index.html'}
 ];
